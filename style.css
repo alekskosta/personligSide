@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(
     90deg,
@@ -46,13 +50,32 @@ p {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; /* nødvendig for transform å fungere på <a> */
+  transition: transform 0.2s ease;
+}
+
+a:hover {
+  color: #bf9673;
+  transform: scale(1.05);
+}
+
 .button {
+  position: relative; /* For å få knapp foran artwork */
   padding: 14px 28px;
   color: white;
   background-color: #583f8c;
   text-decoration: none;
   border-radius: 12px;
   font-family: "Karla", serif;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
 }
 
 .button-two {
@@ -98,7 +121,7 @@ p {
   width: 700px;
   mask: linear-gradient(to top, #000 90%, transparent);
   rotate: 90deg;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.6;
 }
 
@@ -182,10 +205,20 @@ p {
 
 .hero-socials-container {
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .hero-socials-icon {
-  width: 50px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.hero-socials-icon:hover {
+  box-shadow: #583f8c 0px 54px 55px, #583f8c 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, #583f8c 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* News-section  

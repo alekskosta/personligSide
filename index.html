@@ -21,16 +21,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="nav">
         <h1>Aleksander Kostopoulos</h1>
         <ul class="navigation">
-          <li>About</li>
-          <li>Work</li>
-          <li>Music</li>
-          <li>Composer</li>
-          <li>Audiovisual</li>
-          <li>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#composer">Composer</a></li>
+          <li><a href="#audiovisual">Audiovisual</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <img src="./images/artWorks/blbla.png" class="absolute" alt="artwork" />
@@ -53,35 +53,61 @@
             </p>
             <div class="buttonsAndSocials">
               <div class="button-flex">
-                <a href="#" class="button">Work</a>
-                <a href="#" class="button button-two">Contact</a>
+                <a href="#work" class="button">Work</a>
+                <a href="#contact" class="button button-two">Contact</a>
               </div>
               <div class="hero-socials-container">
-                <img
-                  src="./images/icons/spotify-icon.png"
-                  class="hero-socials-icon"
-                  alt="spotify-icon"
-                />
-                <img
-                  src="./images/icons/facebook-icon.png"
-                  class="hero-socials-icon"
-                  alt="facebook-icon"
-                />
-                <img
-                  src="./images/icons/youtube-icon.png"
-                  class="hero-socials-icon"
-                  alt="youtube-icon"
-                />
-                <img
-                  src="./images/icons/gmail-icon.png"
-                  class="hero-socials-icon"
-                  alt="gmail-icon"
-                />
-                <img
-                  src="./images/icons/instagram-icon.png"
-                  class="hero-socials-icon"
-                  alt="instagram-icon"
-                />
+                <a
+                  href="https://open.spotify.com/artist/47UTr7lZZaowVfzAyOuZkW?si=XkXcrPQfTiGDbxk9e8PeNA"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icons/spotify-icon-cropped.png"
+                    class="hero-socials-icon"
+                    alt="spotify-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/alekskostopoulos"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icons/facebook-icon-cropped.png"
+                    class="hero-socials-icon"
+                    alt="facebook-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/@aleksanderkostopoulos7978"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icons/youtube-icon-cropped.png"
+                    class="hero-socials-icon"
+                    alt="youtube-icon"
+                  />
+                </a>
+                <a href="mailto:aleksander.kostopoulos@gmail.com">
+                  <img
+                    src="./images/icons/gmail-icon-cropped.png"
+                    class="hero-socials-icon"
+                    alt="gmail-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/alekskosta"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icons/instagram-icon-cropped.png"
+                    class="hero-socials-icon"
+                    alt="instagram-icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -117,14 +143,20 @@
               this in mind, I created "Klangre", a tribute to our winter.
             </p>
             <div class="button-flex">
-              <a href="#" class="button">Buy or Stream</a>
-              <a href="#" class="button button-two">More Music</a>
+              <a
+                href="https://orcd.co/bs284"
+                target="_blank"
+                rel="noopener"
+                class="button"
+                >Buy or Stream</a
+              >
+              <a href="#music" class="button button-two">More Music</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="first-about-section">
+      <section class="first-about-section" id="about">
         <div class="first-about-container">
           <div class="first-about-image">
             <img
@@ -161,7 +193,7 @@
         </div>
       </section>
 
-      <section class="work-section">
+      <section class="work-section" id="work">
         <div class="work-movie">
           <iframe
             title="vimeo-player"
@@ -174,7 +206,7 @@
         </div>
       </section>
 
-      <section class="music-section">
+      <section class="music-section" id="music">
         <h2 class="music-comp-audiovisual-title">- Music -</h2>
         <div class="musicAndComp-container">
           <div class="albumAndEpAndComp">
@@ -231,7 +263,13 @@
                 <h3>- BaNi -</h3>
                 <small>2024</small>
               </div>
-              <a href="#" class="button">Buy or Stream</a>
+              <a
+                href="https://orcd.co/bs278"
+                target="_blank"
+                rel="noopener"
+                class="button"
+                >Buy or Stream</a
+              >
             </div>
             <div class="albumAndEpAndComp-img">
               <img
@@ -247,7 +285,13 @@
                 <h3>- Klangre -</h3>
                 <small>2025</small>
               </div>
-              <a href="#" class="button">Buy or Stream</a>
+              <a
+                href="https://orcd.co/bs284"
+                target="_blank"
+                rel="noopener"
+                class="button"
+                >Buy or Stream</a
+              >
             </div>
             <div class="albumAndEpAndComp-img">
               <img
@@ -259,7 +303,7 @@
         </div>
       </section>
 
-      <section class="composer-section">
+      <section class="composer-section" id="composer">
         <h2 class="music-comp-audiovisual-title">- Composer -</h2>
         <div class="musicAndComp-container">
           <div class="albumAndEpAndComp">
@@ -328,7 +372,7 @@
         </div>
       </section>
 
-      <section class="audiovisual-section">
+      <section class="audiovisual-section" id="audiovisual">
         <h2 class="music-comp-audiovisual-title">- Audiovisual -</h2>
         <div class="audio-container">
           <div class="audio-flex">
@@ -393,43 +437,70 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="contact">
       <section class="footer-bottom">
         <nav class="nav-footer">
-          <h2>Home</h2>
+          <h2><a href="#header">Home</a></h2>
           <ul class="navigation">
-            <li>About</li>
-            <li>Work</li>
-            <li>Music</li>
-            <li>Composer</li>
-            <li>Audiovisual</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#composer">Composer</a></li>
+            <li><a href="#audiovisual">Audiovisual</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="hero-socials-container">
-            <img
-              src="./images/icons/spotify-icon.png"
-              class="hero-socials-icon"
-              alt="spotify-icon"
-            />
-            <img
-              src="./images/icons/facebook-icon.png"
-              class="hero-socials-icon"
-              alt="facebook-icon"
-            />
-            <img
-              src="./images/icons/youtube-icon.png"
-              class="hero-socials-icon"
-              alt="youtube-icon"
-            />
-            <img
-              src="./images/icons/gmail-icon.png"
-              class="hero-socials-icon"
-              alt="gmail-icon"
-            />
-            <img
-              src="./images/icons/instagram-icon.png"
-              class="hero-socials-icon"
-              alt="instagram-icon"
-            />
+            <a
+              href="https://open.spotify.com/artist/47UTr7lZZaowVfzAyOuZkW?si=XkXcrPQfTiGDbxk9e8PeNA"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./images/icons/spotify-icon-cropped.png"
+                class="hero-socials-icon"
+                alt="spotify-icon"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/alekskostopoulos"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./images/icons/facebook-icon-cropped.png"
+                class="hero-socials-icon"
+                alt="facebook-icon"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@aleksanderkostopoulos7978"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./images/icons/youtube-icon-cropped.png"
+                class="hero-socials-icon"
+                alt="youtube-icon"
+              />
+            </a>
+            <a href="mailto:aleksander.kostopoulos@gmail.com">
+              <img
+                src="./images/icons/gmail-icon-cropped.png"
+                class="hero-socials-icon"
+                alt="gmail-icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/alekskosta"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./images/icons/instagram-icon-cropped.png"
+                class="hero-socials-icon"
+                alt="instagram-icon"
+              />
+            </a>
           </div>
           <div class="footer-contact">
             <h4>Booking/Contact</h4>
