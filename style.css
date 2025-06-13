@@ -94,52 +94,189 @@ a:hover {
 ---------------------------------------- */
 
 .absolute {
+  top: -60%;
+  right: 35%;
+  width: 15%;
+  height: 100%;
   position: absolute;
-  top: -50%;
-  right: 40%;
-  width: 500px;
-  mask: linear-gradient(to right, #000 90%, transparent);
-  rotate: 45deg;
-  z-index: 1;
-  opacity: 0.7;
+  rotate: 60deg;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 .absolute2 {
   position: absolute;
-  top: -60%;
+  top: 200%;
+
   right: 0;
-  left: -375px;
-  width: 400px;
-  height: 600px;
-  rotate: 45deg;
-  mask: linear-gradient(to top, #000 90%, transparent);
+  width: 20%;
+  height: 40%;
+  filter: brightness(1.4);
+  z-index: -2;
+  opacity: 0.5;
+  mask: linear-gradient(to bottom, #000 50%, transparent);
 }
 
 .absolute3 {
   position: absolute;
-  top: 15%;
-  left: -500px;
+  top: 70%;
+  left: 0;
   right: 0;
   bottom: 10%;
   width: 700px;
   mask: linear-gradient(to top, #000 90%, transparent);
   rotate: 90deg;
-  z-index: 0;
-  opacity: 0.6;
+  z-index: -1;
+  opacity: 0.9;
+  filter: brightness(1.4);
 }
 
 .absolute4 {
   position: absolute;
-  top: 240%;
+  top: 250%;
   left: 0;
-  right: 89%;
-  bottom: 0%;
-  width: 650px;
-  opacity: 0.5;
-  z-index: 1;
 
+  height: 50%;
+  width: 40%;
+  opacity: 0.5;
   rotate: 180deg;
-  z-index: 1;
+  z-index: -1;
+  mask: linear-gradient(to bottom, #000 50%, transparent);
+}
+
+.absolute5 {
+  position: absolute;
+  top: 700%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  rotate: 180deg;
+  z-index: -1;
+  opacity: 0.9;
+  filter: brightness(1.4);
+}
+
+.absolute6 {
+  position: absolute;
+  top: 700%;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  z-index: -1;
+  opacity: 0.9;
+  filter: brightness(1.4);
+}
+
+.absolute7 {
+  position: absolute;
+  top: 700%;
+  height: 50%;
+  right: 20%;
+  bottom: 0;
+  width: 5%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  z-index: -1;
+  opacity: 0.6;
+  filter: brightness(1.4);
+  rotate: -10deg;
+}
+
+.absolute8 {
+  position: absolute;
+  top: 700%;
+  height: 50%;
+  right: 0;
+  left: 20%;
+  bottom: 0;
+  width: 5%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  z-index: -1;
+  opacity: 0.6;
+  rotate: 10deg;
+  filter: brightness(1.4);
+}
+
+.absolute9 {
+  position: absolute;
+  top: 200%;
+  height: 100%;
+  right: 0;
+  left: 15%;
+  bottom: 0;
+  width: 5%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  z-index: -1;
+  opacity: 0.5;
+  filter: brightness(1.4);
+}
+
+.absolute10 {
+  position: absolute;
+  top: 400%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  rotate: 180deg;
+  z-index: -1;
+  opacity: 0.7;
+  filter: brightness(1.9);
+}
+
+.absolute11 {
+  position: absolute;
+  top: 500%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  width: 45%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  z-index: -1;
+  opacity: 0.7;
+  filter: brightness(1.9);
+}
+
+.absolute12 {
+  position: absolute;
+  top: 400%;
+  height: 100%;
+  right: 0;
+  left: 30%;
+  bottom: 0;
+  width: 5%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  z-index: -1;
+  opacity: 0.5;
+  filter: brightness(1.4);
+  rotate: -20deg;
+}
+
+.absolute13 {
+  position: absolute;
+  top: 500%;
+  height: 100%;
+  right: 0;
+  left: 70%;
+  bottom: 0;
+  width: 5%;
+  mask: linear-gradient(to top, #000 90%, transparent);
+  transform: rotate(180deg) scaleX(-1);
+  rotate: 20deg;
+  z-index: -1;
+  opacity: 0.5;
+  filter: brightness(1.4);
 }
 
 /* HEADER  
