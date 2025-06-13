@@ -155,7 +155,7 @@ a:hover {
   mask: linear-gradient(to top, #000 90%, transparent);
   rotate: 180deg;
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.6;
   filter: brightness(1.4);
 }
 
@@ -169,7 +169,7 @@ a:hover {
   mask: linear-gradient(to top, #000 90%, transparent);
   transform: rotate(180deg) scaleX(-1);
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.6;
   filter: brightness(1.4);
 }
 
