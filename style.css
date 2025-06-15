@@ -194,32 +194,31 @@ a:hover {
 
 .absolute8 {
   position: absolute;
-  top: 700%;
-  height: 50%;
-  right: 0;
-  left: 20%;
+  top: 0;
+  height: 100%;
+  left: 0;
   bottom: 0;
-  width: 5%;
+  width: 45%;
   mask: linear-gradient(to top, #000 90%, transparent);
   transform: rotate(180deg) scaleX(-1);
   z-index: -1;
-  opacity: 0.6;
-  rotate: 10deg;
-  filter: brightness(1.4);
+  opacity: 0.7;
+  filter: brightness(1.9);
 }
 
 .absolute9 {
   position: absolute;
-  top: 700%;
-  height: 50%;
-  left: 0;
+  top: 0;
+  height: 100%;
   right: 0;
+  left: 70%;
   bottom: 0;
-  width: 25%;
+  width: 5%;
   mask: linear-gradient(to top, #000 90%, transparent);
-  rotate: 180deg;
+  transform: rotate(180deg) scaleX(-1);
+  rotate: 20deg;
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.5;
   filter: brightness(1.4);
 }
 
@@ -240,16 +239,19 @@ a:hover {
 
 .absolute11 {
   position: absolute;
-  top: 500%;
-  height: 100%;
-  left: 0;
+  top: 700%;
+  height: 50%;
+  right: 0;
+  left: 20%;
   bottom: 0;
-  width: 45%;
+  width: 5%;
   mask: linear-gradient(to top, #000 90%, transparent);
   transform: rotate(180deg) scaleX(-1);
   z-index: -1;
-  opacity: 0.7;
-  filter: brightness(1.9);
+  opacity: 0.6;
+  rotate: 10deg;
+  filter: brightness(1.4);
+  border: 1px solid green;
 }
 
 .absolute12 {
@@ -269,18 +271,18 @@ a:hover {
 
 .absolute13 {
   position: absolute;
-  top: 500%;
-  height: 100%;
+  top: 700%;
+  height: 50%;
+  left: 0;
   right: 0;
-  left: 70%;
   bottom: 0;
-  width: 5%;
+  width: 25%;
   mask: linear-gradient(to top, #000 90%, transparent);
-  transform: rotate(180deg) scaleX(-1);
-  rotate: 20deg;
+  rotate: 180deg;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.9;
   filter: brightness(1.4);
+  border: 1px solid magenta;
 }
 
 /* HEADER  
