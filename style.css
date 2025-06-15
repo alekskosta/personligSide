@@ -230,7 +230,7 @@ a:hover {
   right: 0;
   bottom: 0;
   width: 25%;
-  mask: linear-gradient(to top, #000 90%, transparent);
+
   rotate: 180deg;
   z-index: -1;
   opacity: 0.9;
@@ -239,7 +239,6 @@ a:hover {
 
 .absolute11 {
   position: absolute;
-
   height: 100%;
   right: 0;
   left: 20%;
@@ -255,7 +254,7 @@ a:hover {
 
 .absolute12 {
   position: absolute;
-
+  rotate: -10deg;
   height: 100%;
   right: 20%;
   bottom: 0;
@@ -274,7 +273,7 @@ a:hover {
   right: 0;
   bottom: 0;
   width: 25%;
-  mask: linear-gradient(to top, #000 90%, transparent);
+
   transform: rotate(180deg) scaleX(-1);
   z-index: -1;
   opacity: 0.9;
