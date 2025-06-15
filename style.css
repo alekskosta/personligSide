@@ -114,19 +114,6 @@ a:hover {
 
 .absolute2 {
   position: absolute;
-  top: 200%;
-  right: 0;
-  width: 20%;
-  height: 40%;
-  filter: brightness(1.4);
-  z-index: -2;
-  opacity: 0.5;
-  mask: linear-gradient(to bottom, #000 50%, transparent);
-  border: 1px solid blue;
-}
-
-.absolute3 {
-  position: absolute;
   top: 77%;
   left: 0;
   width: 50%;
@@ -136,11 +123,22 @@ a:hover {
   mask: linear-gradient(to right, #000 90%, transparent);
 }
 
+.absolute3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 40%;
+  filter: brightness(1.4);
+  z-index: -2;
+  opacity: 0.5;
+  mask: linear-gradient(to bottom, #000 50%, transparent);
+}
+
 .absolute4 {
   position: absolute;
-  top: 250%;
+  bottom: 0;
   left: 0;
-
   height: 50%;
   width: 40%;
   opacity: 0.5;
@@ -151,16 +149,16 @@ a:hover {
 
 .absolute5 {
   position: absolute;
-  top: 700%;
-  height: 50%;
-  left: 0;
+  top: 0;
+  height: 100%;
   right: 0;
+  left: 15%;
   bottom: 0;
-  width: 25%;
+  width: 5%;
   mask: linear-gradient(to top, #000 90%, transparent);
-  rotate: 180deg;
+  transform: rotate(180deg) scaleX(-1);
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.5;
   filter: brightness(1.4);
 }
 
@@ -211,16 +209,16 @@ a:hover {
 
 .absolute9 {
   position: absolute;
-  top: 200%;
-  height: 100%;
+  top: 700%;
+  height: 50%;
+  left: 0;
   right: 0;
-  left: 15%;
   bottom: 0;
-  width: 5%;
+  width: 25%;
   mask: linear-gradient(to top, #000 90%, transparent);
-  transform: rotate(180deg) scaleX(-1);
+  rotate: 180deg;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.9;
   filter: brightness(1.4);
 }
 
