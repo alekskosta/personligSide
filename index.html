@@ -24,7 +24,7 @@
     <header id="header">
       <nav class="nav">
         <h1><a href="#header">Aleksander Kostopoulos</a></h1>
-        <ul class="navigation">
+        <ul class="hamburger-navigation navigation">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#music">Music</a></li>
@@ -32,6 +32,11 @@
           <li><a href="#audiovisual">Audiovisual</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
 
@@ -131,8 +136,9 @@
         <div class="news-flex-container">
           <div class="news-flexcontainer-image">
             <img
-              src="/images/albumCovers/Aleksander Kostopoulos - Klangre (COVER m:TEKST).png"
+              src="/images/albumCovers/Aleksander Kostopoulos - Klangre 600x600.png"
               alt="Albumcover of Klangre"
+              class="close-img"
             />
           </div>
 
@@ -349,6 +355,28 @@
               />
             </div>
           </div>
+
+          <div class="albumAndEpAndComp">
+            <div class="albumAndEpAndComp-text albumAndEp-text">
+              <div class="title-and-year">
+                <h3>- Begrenset -</h3>
+                <small>2025</small>
+              </div>
+              <a
+                href="https://orcd.co/bs284"
+                target="_blank"
+                rel="noopener"
+                class="button"
+                >Buy or Stream</a
+              >
+            </div>
+            <div class="albumAndEpAndComp-img">
+              <img
+                src="./images/albumCovers/Begrenset(Cover)_til_Web_v2.jpg"
+                alt="Dancer in water with drummer in the background"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -376,7 +404,7 @@
             </div>
             <div class="albumAndEpAndComp-img">
               <img
-                src="./images/composerWorks/graceland.jpg"
+                src="./images/composerWorks/Graceland-tilWeb.jpg"
                 alt="Two dancers and a drummer performing"
               />
             </div>
@@ -392,7 +420,7 @@
             </div>
             <div class="albumAndEpAndComp-img">
               <img
-                src="./images/composerWorks/Two+Duets_Photo-+Tale+Hendnes.jpeg"
+                src="./images/composerWorks/toDuetter_tilWeb.jpg"
                 alt="Mother and Child dancing"
               />
             </div>
@@ -408,8 +436,8 @@
             </div>
             <div class="albumAndEpAndComp-img">
               <img
-                src="./images/composerWorks/begrenset.jpg"
-                alt="Dancer in a pool with musicians in the background"
+                src="./images/composerWorks/Begrenset(Cover)_til_Web_v3.jpg"
+                alt="Dancer in a pool with drummer in the background"
               />
             </div>
           </div>
@@ -424,7 +452,7 @@
             </div>
             <div class="albumAndEpAndComp-img">
               <img
-                src="./images/composerWorks/Sherlock-Jr_01.jpg"
+                src="./images/composerWorks/sherlockJr_tilWeb.jpg"
                 alt="Sherlock Jr reading the How-To-Be-A-Detective book"
               />
             </div>
@@ -505,7 +533,7 @@
         />
         <nav class="nav-footer">
           <h2><a href="#header">Home</a></h2>
-          <ul class="navigation">
+          <ul class="navigation-footer">
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#music">Music</a></li>
@@ -574,5 +602,7 @@
         </nav>
       </section>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
