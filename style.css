@@ -624,6 +624,22 @@ a:hover {
 ---------------------------------------- */
 
 @media (max-width: 1182px) {
+  .absolute {
+    top: -25%;
+    right: 37%;
+    width: 15%;
+    height: 30%;
+    position: absolute;
+    rotate: 60deg;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  .wave-image {
+    animation: none;
+    transform-origin: center center;
+  }
+
   .news-section {
     height: auto;
   }
@@ -816,6 +832,7 @@ a:hover {
     z-index: 5;
     border: 1px solid;
     display: none;
+    border: 1px solid green;
   }
 
   .navigation.active {
@@ -824,6 +841,17 @@ a:hover {
 
   .hamburger {
     display: flex;
+  }
+
+  .absolute {
+    top: -39%;
+    right: 37%;
+    width: 15%;
+    height: 50%;
+    position: absolute;
+    rotate: 60deg;
+    z-index: -1;
+    opacity: 0.9;
   }
 
   .hero-flex-container {
@@ -840,17 +868,22 @@ a:hover {
     font-size: 2rem;
   }
 
+  p {
+    font-size: 0.8 rem;
+  }
+
   .hero-text {
     flex: 1 50%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     gap: 20px;
     padding: clamp(20px, 5vw, 100px);
     width: 100%;
     height: 50%;
     box-sizing: border-box;
+    order: 2;
   }
 
   .hero-image {
@@ -861,11 +894,13 @@ a:hover {
     align-items: center;
     justify-content: center;
     mask: linear-gradient(to top, #000 50%, transparent);
+    order: 1;
   }
 
   .hero-image-close {
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
     filter: brightness(1.4);
+    width: 100%;
   }
 
   .buttonsAndSocials {
