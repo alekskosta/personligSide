@@ -1091,11 +1091,11 @@ a:hover {
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .button {
@@ -1110,6 +1110,6 @@ a:hover {
   }
 
   .hero-title {
-    max-width: 240px;
+    max-width: 270px;
   }
 }
