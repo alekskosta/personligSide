@@ -930,6 +930,9 @@ a:hover {
 }
 
 @media (max-width: 677px) {
+  .nav {
+    margin-bottom: 20px;
+  }
   .absolute {
     top: -10%;
     right: 50%;
@@ -977,6 +980,7 @@ a:hover {
     padding: 40px;
     border-top: 15px solid #583f8c;
     order: 2;
+    margin-top: 20px;
   }
 
   .hero-title {
@@ -991,6 +995,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     /*mask: linear-gradient(to top, #000 50%, transparent);*/
+
     mask-image: linear-gradient(
       to top,
       transparent 0%,
