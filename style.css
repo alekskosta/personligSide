@@ -1073,7 +1073,7 @@ a:hover {
   .absolute6 {
     position: absolute;
     top: 0;
-    height: 60%;
+    height: 40%;
     right: 0;
     left: 30%;
     bottom: 0;
@@ -1089,7 +1089,7 @@ a:hover {
   .absolute9 {
     position: absolute;
     top: 0;
-    height: 60%;
+    height: 40%;
     right: 0;
     left: 50%;
     bottom: 0;
@@ -1131,6 +1131,69 @@ a:hover {
     box-shadow: #583f8c 0px 54px 55px, #583f8c 0px -12px 30px,
       rgba(0, 0, 0, 0.12) 0px 4px 6px, #583f8c 0px 12px 13px,
       rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .music-section {
+    border-bottom: 15px solid #bf9673;
+    height: auto;
+  }
+
+  .composer-section {
+    border-bottom: 15px solid #583f8c;
+    height: auto;
+  }
+
+  .musicAndComp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .albumAndEpAndComp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 100%;
+    justify-content: space-between;
+    border: 2px solid #583f8c;
+  }
+
+  .albumAndEpAndComp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+    padding: 80px;
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .albumAndEp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 80%;
+    height: 80%;
+    margin-top: 0;
+    padding: 40px;
+  }
+
+  .title-and-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .albumAndEpAndComp-img {
+    flex: 1 20%;
+    height: 20%;
+    display: flex;
   }
 
   .navigation-footer {
@@ -1179,5 +1242,21 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+
+  .absolute9 {
+    position: absolute;
+    top: 0;
+    height: 30%;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    width: 5%;
+    mask: linear-gradient(to top, #000 90%, transparent);
+    transform: rotate(180deg) scaleX(-1);
+    rotate: 20deg;
+    z-index: -1;
+    opacity: 0.5;
+    filter: brightness(1.4);
   }
 }
