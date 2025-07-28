@@ -1159,7 +1159,7 @@ a:hover {
     justify-content: center;
     flex: 1 100%;
     justify-content: space-between;
-    border: 5px solid #583f8c;
+    border-top: 10px solid #583f8c;
   }
 
   .albumAndEpAndComp-text {
