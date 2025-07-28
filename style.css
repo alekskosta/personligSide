@@ -816,6 +816,23 @@ a:hover {
 
 /* RESPONSIV MENY */
 @media (max-width: 900px) {
+  .nav {
+    margin-bottom: 20px;
+  }
+  .absolute {
+    top: -10%;
+    right: 50%;
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    rotate: 60deg;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  .hero-section {
+    height: auto;
+  }
+
   .navigation {
     position: absolute;
     top: 100px;
@@ -865,36 +882,41 @@ a:hover {
     width: 100%;
   }
 
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1 rem;
-  }
-
   .hero-text {
-    flex: 1 50%;
+    flex: 1 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    padding: clamp(20px, 5vw, 100px);
-    width: 100%;
-    height: 50%;
-    box-sizing: border-box;
+    padding: 20px;
+    max-width: 100%;
+    height: 70%;
+    padding: 40px;
+    border-top: 15px solid #583f8c;
     order: 2;
+    margin-top: 20px;
   }
 
   .hero-image {
-    flex: 1 50%;
+    flex: 1 30%;
     width: 100%;
-    height: 50%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    mask: linear-gradient(to top, #000 50%, transparent);
+    /*mask: linear-gradient(to top, #000 50%, transparent);*/
+
+    mask-image: linear-gradient(
+      to top,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    );
+    mask-mode: alpha;
+    mask-repeat: no-repeat;
+    mask-size: cover;
     order: 1;
   }
 
@@ -930,9 +952,6 @@ a:hover {
 }
 
 @media (max-width: 677px) {
-  .nav {
-    margin-bottom: 20px;
-  }
   .absolute {
     top: -10%;
     right: 50%;
@@ -942,9 +961,6 @@ a:hover {
     rotate: 60deg;
     z-index: -1;
     opacity: 0.9;
-  }
-  .hero-section {
-    height: auto;
   }
 
   .hero-flex-container {
@@ -1084,6 +1100,34 @@ a:hover {
     z-index: -1;
     opacity: 0.5;
     filter: brightness(1.4);
+  }
+
+  .first-about-section {
+    border-bottom: 15px solid #bf9673;
+  }
+
+  .first-about-container {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .first-about-image {
+    flex: 1 1 50%;
+    mask: linear-gradient(to right, #000 50%, transparent);
+    filter: brightness(1.4);
+    clip-path: polygon(60% 10%, 100% 30%, 100% 100%, 0% 60%);
+  }
+
+  .first-about-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #000;
+    gap: 20px;
   }
 
   .navigation-footer {
