@@ -1073,7 +1073,7 @@ a:hover {
   .absolute6 {
     position: absolute;
     top: 0;
-    height: 40%;
+    height: 30%;
     right: 0;
     left: 30%;
     bottom: 0;
@@ -1089,7 +1089,7 @@ a:hover {
   .absolute9 {
     position: absolute;
     top: 0;
-    height: 40%;
+    height: 30%;
     right: 0;
     left: 50%;
     bottom: 0;
@@ -1159,7 +1159,10 @@ a:hover {
     justify-content: center;
     flex: 1 100%;
     justify-content: space-between;
-    border: 2px solid #583f8c;
+    border: 0.5px solid #583f8c;
+    box-shadow: #583f8c 0px 54px 55px, #583f8c 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, #583f8c 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   .albumAndEpAndComp-text {
@@ -1171,6 +1174,8 @@ a:hover {
     padding: 80px;
     margin-top: 0;
     gap: 20px;
+    background-color: #000;
+    width: 100%;
   }
 
   .albumAndEp-text {
@@ -1182,6 +1187,8 @@ a:hover {
     height: 80%;
     margin-top: 0;
     padding: 40px;
+    background-color: #000;
+    width: 100%;
   }
 
   .title-and-year {
