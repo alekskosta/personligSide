@@ -1104,6 +1104,8 @@ a:hover {
 @media (max-width: 375px) {
   .nav {
     padding: 40px;
+    justify-content: center;
+    gap: 20px;
   }
   .hero-section {
     height: auto;
