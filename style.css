@@ -1133,6 +1133,16 @@ a:hover {
       rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
+  .work-section {
+    height: 50vh;
+    padding: 40px 0px;
+  }
+
+  .work-movie {
+    height: 100%;
+    width: 100%;
+  }
+
   .music-section {
     border-bottom: 15px solid #bf9673;
     height: auto;
