@@ -1182,6 +1182,7 @@ a:hover {
     margin-top: 0;
     gap: 20px;
     background-color: #000;
+    background: rgba(19, 14, 11, 1);
     width: 100%;
   }
 
