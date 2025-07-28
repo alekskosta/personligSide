@@ -1168,7 +1168,7 @@ a:hover {
     justify-content: center;
     align-items: flex-start;
     flex: 1 1 50%;
-    padding: 80px;
+    padding: 40px;
     margin-top: 0;
     gap: 20px;
     background-color: #000;
@@ -1259,6 +1259,64 @@ a:hover {
 
   .footer-bottom {
     height: auto;
+  }
+
+  .absolute10 {
+    position: absolute;
+
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+
+    rotate: 180deg;
+    z-index: -1;
+    opacity: 0.9;
+    filter: brightness(1.4);
+  }
+
+  .absolute11 {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    left: 10%;
+    bottom: 0;
+    width: 5%;
+    mask: linear-gradient(to top, #000 90%, transparent);
+    transform: rotate(180deg) scaleX(-1);
+    z-index: -1;
+    opacity: 0.6;
+    rotate: 10deg;
+    filter: brightness(1.4);
+  }
+
+  .absolute12 {
+    position: absolute;
+    rotate: -10deg;
+    height: 100%;
+    right: 10%;
+    bottom: 0;
+    width: 5%;
+    mask: linear-gradient(to top, #000 90%, transparent);
+    transform: rotate(180deg) scaleX(-1);
+    z-index: -1;
+    opacity: 0.6;
+    filter: brightness(1.4);
+  }
+
+  .absolute13 {
+    position: absolute;
+
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+
+    transform: rotate(180deg) scaleX(-1);
+    z-index: -1;
+    opacity: 0.9;
+    filter: brightness(1.4);
   }
 }
 
