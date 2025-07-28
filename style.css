@@ -1383,3 +1383,21 @@ a:hover {
     filter: brightness(1.4);
   }
 }
+
+@media (max-height: 500px) {
+  .hero-section {
+    height: auto;
+  }
+
+  .news-section {
+    height: auto;
+  }
+
+  .audiovisual-section {
+    height: auto;
+  }
+
+  .footer-bottom {
+    height: auto;
+  }
+}
