@@ -1127,6 +1127,7 @@ a:hover {
     align-items: flex-start;
     padding: 40px;
     background-color: #000;
+    background: rgba(19, 14, 11, 1);
     gap: 20px;
     box-shadow: #583f8c 0px 54px 55px, #583f8c 0px -12px 30px,
       rgba(0, 0, 0, 0.12) 0px 4px 6px, #583f8c 0px 12px 13px,
@@ -1193,7 +1194,7 @@ a:hover {
     height: 80%;
     margin-top: 0;
     padding: 40px;
-    background-color: #000;
+    background: rgba(19, 14, 11, 1);
     width: 100%;
   }
 
@@ -1209,6 +1210,7 @@ a:hover {
     display: flex;
     padding: 40px;
     padding-top: 0px;
+    background: rgba(19, 14, 11, 1);
   }
 
   .audiovisual-section {
