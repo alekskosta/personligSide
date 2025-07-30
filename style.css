@@ -1298,7 +1298,6 @@ a:hover {
   }
 
   .navigation-footer li {
-    flex: 0 0 calc(33.333% - 13.33px); /* 3 per rad med gap regnet inn */
     text-align: center;
   }
 
