@@ -723,7 +723,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
     flex-wrap: nowrap;
   }
@@ -1157,7 +1157,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
     flex-wrap: nowrap;
   }
