@@ -442,6 +442,7 @@ a:hover {
 
 .first-about-section {
   border-bottom: 15px solid #bf9673;
+  overflow: hidden;
 }
 
 .first-about-container {
