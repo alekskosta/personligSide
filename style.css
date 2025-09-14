@@ -399,6 +399,7 @@ a:hover {
 
 .news-section {
   border-bottom: 15px solid #583f8c;
+  min-height: 100vh;
 }
 
 .news-flex-container {
@@ -482,29 +483,50 @@ a:hover {
 
 .music-section {
   border-bottom: 15px solid #bf9673;
+  min-height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .composer-section {
   border-bottom: 15px solid #583f8c;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.music-comp-audiovisual-title {
+  flex: 1 1 20%;
 }
 
 .musicAndComp-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 100%;
-  flex-wrap: nowrap;
+  flex: 1 1 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.musicAndComp-container-composer {
+  flex: 1 1 80%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .albumAndEpAndComp {
-  display: flex;
+  border: 0.5px solid #583f8c;
+  display: flex; /* du kan fortsatt bruke flex inni grid items */
   flex-direction: column;
   align-items: center;
-  flex: 1 100%;
   justify-content: space-between;
+}
+
+.albumAndEpAndComp-composer {
   border: 0.5px solid #583f8c;
-  height: 100%;
+  display: flex; /* du kan fortsatt bruke flex inni grid items */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .albumAndEpAndComp-text {
@@ -515,12 +537,21 @@ a:hover {
   flex: 1 50%;
   gap: 20px;
   padding: 40px;
-  margin-top: 40px;
+}
+
+.albumAndEpAndComp-text-composer {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  flex: 1 1 50%;
+  gap: 20px;
+  padding: 40px;
 }
 
 .albumAndEp-text {
   justify-content: center;
-  flex: 1 50%;
+  flex: 1 1 50%;
   margin-top: 0;
 }
 
@@ -530,8 +561,23 @@ a:hover {
   align-items: center;
 }
 
-.albumAndEpAndComp-img {
+.albumAndEpAndComp-img img {
+  width: 100%;
+  height: 100%;
   flex: 1 1 50%;
+}
+
+.albumAndEpAndComp-img-composer {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 50%;
+}
+
+.albumAndEpAndComp-img img,
+.albumAndEpAndComp-img-composer img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
 }
 
 /* Audiovisual-section
@@ -539,11 +585,16 @@ a:hover {
 
 .audiovisual-section {
   border-bottom: 15px solid #bf9673;
+  min-height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .audio-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   height: 100%;
+  width: 100%;
 }
 
 .audio-flex {
@@ -554,6 +605,7 @@ a:hover {
   border: 0.5px solid #583f8c;
   height: 100%;
   flex: 1 50%;
+  width: 100%;
 }
 
 .audio-text {
@@ -561,13 +613,13 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 40%;
+  flex: 1 50%;
   gap: 20px;
   padding: 40px;
 }
 
 .audio-video {
-  flex: 1 60%;
+  flex: 1 50%;
   width: 100%;
   height: 100%;
 }
@@ -645,6 +697,7 @@ a:hover {
 
 /* RESPONSIV DESKTOP STOR
 ---------------------------------------- */
+
 @media (min-width: 2222px) {
   .news-flexcontainer-image {
     padding: 100px;
@@ -657,7 +710,7 @@ a:hover {
 
 @media (max-width: 1182px) {
   .absolute {
-    top: -25%;
+    top: -30%;
     right: 37%;
     width: 15%;
     height: 30%;
@@ -759,6 +812,15 @@ a:hover {
     flex-wrap: nowrap;
   }
 
+  .musicAndComp-container-composer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
   .albumAndEpAndComp {
     display: flex;
     flex-direction: row;
@@ -769,7 +831,28 @@ a:hover {
     border: 0.5px solid #583f8c;
   }
 
+  .albumAndEpAndComp-composer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1 100%;
+    justify-content: space-between;
+    border: 0.5px solid #583f8c;
+  }
+
   .albumAndEpAndComp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+    padding: 80px;
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .albumAndEpAndComp-text-composer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -800,16 +883,54 @@ a:hover {
     flex: 1 1 50%;
     display: flex;
   }
-}
 
-.absolute9 {
-  position: absolute;
-  top: 0;
-  height: 80%;
-  right: 0;
-  left: 60%;
-  bottom: 0;
-  width: 5%;
+  .albumAndEpAndComp-img-composer {
+    flex: 1 1 50%;
+    display: flex;
+  }
+  .audiovisual-section {
+    height: auto;
+  }
+
+  .audio-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .audio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 40%;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .audio-video {
+    flex: 1 60%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .audio-max {
+    height: 50vh;
+  }
+
+  .footer-bottom {
+    height: auto;
+  }
+
+  .absolute9 {
+    position: absolute;
+    top: 0;
+    height: 80%;
+    right: 0;
+    left: 60%;
+    bottom: 0;
+    width: 5%;
+  }
 }
 
 /* RESPONSIV NETTBRETT
@@ -1193,7 +1314,26 @@ a:hover {
     flex-wrap: nowrap;
   }
 
+  .musicAndComp-container-composer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
   .albumAndEpAndComp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 100%;
+    justify-content: space-between;
+    border-top: 10px solid #583f8c;
+  }
+
+  .albumAndEpAndComp-composer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1217,6 +1357,13 @@ a:hover {
     width: 100%;
   }
 
+  .albumAndEpAndComp-text-composer {
+    align-items: flex-start;
+    justify-content: center;
+    background: rgba(19, 14, 11, 1);
+    padding: 40px;
+  }
+
   .albumAndEp-text {
     display: flex;
     flex-direction: column;
@@ -1237,6 +1384,15 @@ a:hover {
   }
 
   .albumAndEpAndComp-img {
+    flex: 1 20%;
+    height: 20%;
+    display: flex;
+    padding: 40px;
+    padding-top: 0px;
+    background: rgba(19, 14, 11, 1);
+  }
+
+  .albumAndEpAndComp-img-composer {
     flex: 1 20%;
     height: 20%;
     display: flex;
@@ -1352,12 +1508,10 @@ a:hover {
 
   .absolute13 {
     position: absolute;
-
     height: 100%;
     right: 0;
     bottom: 0;
     width: 10%;
-
     transform: rotate(180deg) scaleX(-1);
     z-index: -1;
     opacity: 0.9;
@@ -1415,19 +1569,57 @@ a:hover {
   }
 }
 
-@media (max-height: 500px) {
-  .hero-section {
-    height: auto;
-  }
-
+@media (max-height: 750px) {
   .news-section {
     height: auto;
+    padding: 40px 0px;
   }
 
+  .music-section,
+  .composer-section,
   .audiovisual-section {
     height: auto;
   }
 
+  .audio-max {
+    height: 50vh;
+  }
+
+  .musicAndComp-container {
+    border: 1px solid red;
+  }
+
+  /* --- Kvadratiske thumbnails for music + audiovisual --- */
+
+  /* Rammen som alltid er kvadratisk */
+  .albumAndEpAndComp-img,
+  .albumAndEpAndComp-img-composer,
+  .audio-video {
+    aspect-ratio: 1 / 1; /* gjør boksen kvadratisk */
+    width: 100%;
+    max-height: 100%; /* ikke bli høyere enn kortets del */
+    min-height: 0;
+    display: block;
+  }
+
+  /* Selve media fyller rammen uten deformasjon */
+  .albumAndEpAndComp-img img,
+  .audio-video .audio-max {
+    display: block; /* fjerner baseline-gap som kan gi ekstra høyde */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* lik visuell størrelse, crops pent */
+  }
+
+  /* Hvis en margin skyver ting: null den */
+  .albumAndEpAndComp-text {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-height: 450px) {
+  .hero-section,
+  .first-about-section,
   .footer-bottom {
     height: auto;
   }
