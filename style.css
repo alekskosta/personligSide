@@ -520,6 +520,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid red;
 }
 
 .albumAndEpAndComp-composer {
@@ -699,10 +700,11 @@ a:hover {
 /* RESPONSIV DESKTOP STOR
 ---------------------------------------- */
 
-@media (min-width: 2222px) {
+@media (min-width: 1787px) {
   .news-flexcontainer-image {
     padding: 100px;
     height: 100%;
+    object-fit: cover;
   }
 }
 
