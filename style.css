@@ -561,9 +561,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.albumAndEpAndComp-img {
-  flex: 1 1 50%;
-}
 
 .albumAndEpAndComp-img img {
   width: 100%;
