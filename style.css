@@ -1392,8 +1392,6 @@ a:hover {
     display: flex;
 
     background: rgba(19, 14, 11, 1);
-
-    border: 1px solid red;
   }
 
   .albumAndEpAndComp-img-composer {
