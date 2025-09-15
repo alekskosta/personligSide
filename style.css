@@ -484,7 +484,7 @@ a:hover {
 
 .music-section {
   border-bottom: 15px solid #bf9673;
-  min-height: auto;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
 }
