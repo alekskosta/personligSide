@@ -1317,24 +1317,6 @@ a:hover {
     height: auto;
   }
 
-  .musicAndComp-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    height: 100%;
-    flex-wrap: nowrap;
-  }
-
-  .musicAndComp-container-composer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    height: 100%;
-    flex-wrap: nowrap;
-  }
-
   .albumAndEpAndComp {
     display: flex;
     flex-direction: column;
