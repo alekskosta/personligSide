@@ -1381,8 +1381,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 80%;
-    height: 80%;
     margin-top: 0;
     padding: 40px;
     background: rgba(19, 14, 11, 1);
