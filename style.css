@@ -1392,15 +1392,14 @@ a:hover {
 
   .albumAndEpAndComp-img {
     display: flex;
-    padding: 40px;
-    padding-top: 0px;
+
     background: rgba(19, 14, 11, 1);
     border: 1px solid red;
   }
 
   .albumAndEpAndComp-img-composer {
     display: flex;
-    padding: 40px;
+
     padding-top: 0px;
     background: rgba(19, 14, 11, 1);
   }
