@@ -442,7 +442,7 @@ a:hover {
 
 .first-about-section {
   border-bottom: 15px solid #bf9673;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .first-about-container {
@@ -708,6 +708,17 @@ a:hover {
 
 /* RESPONSIV DESKTOP MINDRE
 ---------------------------------------- */
+
+@media (max-width: 1200px) {
+  .first-about-section {
+    height: auto;
+  }
+
+  .first-about-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 
 @media (max-width: 1182px) {
   .absolute {
@@ -1586,10 +1597,6 @@ a:hover {
     height: 50vh;
   }
 
-  .musicAndComp-container {
-    border: 1px solid red;
-  }
-
   /* --- Kvadratiske thumbnails for music + audiovisual --- */
 
   /* Rammen som alltid er kvadratisk */
@@ -1615,6 +1622,12 @@ a:hover {
   /* Hvis en margin skyver ting: null den */
   .albumAndEpAndComp-text {
     margin-top: 0 !important;
+  }
+}
+
+@media (max-height: 750px) {
+  .first-about-section {
+    height: auto;
   }
 }
 
