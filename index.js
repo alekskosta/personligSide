@@ -1,3 +1,8 @@
+// Slå på transitions ETTER første layout-pass i mobil, så det ikke "flasher"
+window.addEventListener("DOMContentLoaded", () => {
+  requestAnimationFrame(() => document.body.classList.add("nav-ready"));
+});
+
 const hamburger = document.getElementById("hamburger");
 const nav = document.querySelector(".navigation");
 

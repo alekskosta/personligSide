@@ -997,32 +997,51 @@ a:hover {
     height: auto;
   }
 
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+  }
+
+  /* Selve off-canvas-panelet */
   .navigation {
-    position: absolute;
-    top: 100px;
+    position: fixed;
+    top: 100px; /* under headeren */
     right: 0;
+    height: auto;
+    width: 70%;
+    max-width: 300px;
+
     background: rgba(19, 14, 11, 0.95);
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 40px;
     gap: 30px;
-    width: 70%;
-    max-width: 300px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    height: calc(100dvh - 100px);
-    z-index: 5;
-    border: 1px solid;
-    display: none;
-    border: 1px solid green;
+
+    /* Start helt utenfor – uten overgang ved første render */
+
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9;
+    border: 0.5px solid #583f8c;
   }
 
+  /* Åpen tilstand */
   .navigation.active {
-    transform: translateX(0%);
-  }
-
-  .hamburger {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .absolute {
