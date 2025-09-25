@@ -1369,6 +1369,7 @@ a:hover {
     justify-content: center;
     background: rgba(19, 14, 11, 1);
     padding: 40px;
+    width: 100%;
   }
 
   .albumAndEp-text {
@@ -1621,16 +1622,27 @@ a:hover {
   }
 }
 
+@media (max-width: 325px) {
+  .absolute {
+    width: 30%;
+    height: 40%;
+  }
+}
+
 @media (max-height: 750px) {
   .first-about-section {
     height: auto;
   }
 }
 
-@media (max-height: 450px) {
-  .hero-section,
-  .first-about-section,
+@media (max-height: 550px) {
   .footer-bottom {
+    height: auto;
+  }
+}
+
+@media (max-height: 530px) {
+  .hero-section {
     height: auto;
   }
 }
