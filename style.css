@@ -1028,7 +1028,7 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 40px;
-    gap: 30px;
+    gap: 20px;
 
     /* Start helt utenfor – uten overgang ved første render */
 
