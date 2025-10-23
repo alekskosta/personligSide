@@ -957,6 +957,8 @@ a:hover {
   height: 20px;
   cursor: pointer;
   z-index: 10;
+  background: transparent;
+  border: none;
 }
 
 .hamburger span {
