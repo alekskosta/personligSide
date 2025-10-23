@@ -78,7 +78,7 @@
     <header id="header">
       <nav class="nav">
         <h1><a href="#header">Aleksander Kostopoulos</a></h1>
-        <ul class="hamburger-navigation navigation">
+        <ul id="primary-navigation" class="hamburger-navigation navigation">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#music">Music</a></li>
@@ -86,11 +86,18 @@
           <li><a href="#audiovisual">Audiovisual</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          type="button"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
       </nav>
     </header>
 
